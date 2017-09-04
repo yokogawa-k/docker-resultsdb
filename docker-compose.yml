@@ -1,0 +1,8 @@
+version: '2'
+services:
+  resultsdb:
+    image: yokogawa/resultsdb
+    container_name: resultsdb
+    restart: always
+    volumes:
+      - ./resultsdb_data:/resultsdb_data
