@@ -4,7 +4,7 @@ WORKDIR /app
 
 ENV RESULTSDB_VERSION 2.0.5
 RUN set -ex \
-      && git clone -b ${RESULTSDB_VERSION} https://pagure.io/taskotron/resultsdb.git \
+      && git clone https://pagure.io/taskotron/resultsdb.git \
       && cd resultsdb \
       && pip install -r requirements.txt \
       && python setup.py develop
